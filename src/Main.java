@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -53,5 +54,42 @@ public class Main {
         }
 
         System.out.println();
+    }
+
+    public static void task3() {
+        System.out.println("Задача 3");
+//          Распечатайте на отдельной строчке элементы каждого массива в обратном порядке через запятую.
+//          В конце строки запятую ставить не надо.
+
+        int[] numbers1 = new int[] {1, 2, 3};
+        for (int i = numbers1.length - 1; i >= 0; i -= 1) {
+            System.out.print(numbers1[i]);
+            if(i > 0) {
+                System.out.print(", ");
+            }
+        }
+
+        System.out.println();
+
+        float[] numbers2 = {1.57F, 7.654F, 9.986F};
+        for (int i = numbers2.length -1; i >= 0; i -= 1) {
+            System.out.print(numbers2[i]);
+            if(i > 0) {
+                System.out.print(", ");
+            }
+        }
+
+        System.out.println();
+
+        int[] numbers3 = {9, 7, 6};
+        for (int i = numbers3.length - 1; i >= 0; i -= 1) {
+            System.out.print(numbers3[i]);
+            if(i > 0) {
+                System.out.print(", ");
+            }
+        }
+
+        System.out.println();
+
     }
 }
