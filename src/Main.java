@@ -5,6 +5,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -90,6 +91,18 @@ public class Main {
         }
 
         System.out.println();
+    }
 
+    public static void task4() {
+        System.out.println("Задача 4");
+//     Пройдитесь по первому целочисленному массиву
+//     и все нечетные числа в нем сделайте четными (нужно прибавить 1).
+        int[] numbers1 = new int[] {1, 2, 3};
+        for (int i = 0; i < numbers1.length; i++) {
+            if(numbers1[i] % 2 == 1) {
+                numbers1[i] ++;
+            }
+            System.out.println(numbers1[i]);
+        }
     }
 }
