@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -104,5 +105,13 @@ public class Main {
             }
             System.out.println(numbers1[i]);
         }
+
+        // если формат не важен
+        for (int i = 0; i < numbers1.length; i++) {
+            if(numbers1[i] % 2 == 1) {
+                numbers1[i] ++;
+            }
+        }
+        System.out.println(Arrays.toString(numbers1));
     }
 }
